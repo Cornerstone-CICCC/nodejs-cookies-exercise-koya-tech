@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Home Page</h1>
+    <% if (username) { %>
+        <p>Welcome, <%= username %>!</p>
+        <p><a href="/profile">My Profile</a></p>
+        <p><a href="/logout">Logout</a></p>
+        <% } else { %>
+            <p>You are not logged in.</p>
+            <p><a href="/login">Login</a></p>
+            <% } %>
+</body>
+
+</html>
